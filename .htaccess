@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On    # Turn on the rewriting engine
+ 
+    RewriteRule api/contact_email_address/([0-9a-zA-Z_-]*)$ api/contact_email_address.php?park_id=$1 [NC,L]
+    RewriteRule api/contact_phone_number/([0-9a-zA-Z_-]*)$ api/contact_phone_number.php?park_id=$1 [NC,L]
+    RewriteRule api/entrance_fee/([0-9a-zA-Z_-]*)$ api/entrance_fee.php?park_id=$1 [NC,L]
+    RewriteRule api/entrance_pass/([0-9a-zA-Z_-]*)$ api/entrance_pass.php?park_id=$1 [NC,L]
+    RewriteRule api/image/([0-9a-zA-Z_-]*)$ api/image.php?park_id=$1 [NC,L]
+    RewriteRule api/topic/([0-9a-zA-Z_-]*)$ api/topic.php?park_id=$1 [NC,L]
+    RewriteRule api/address/([0-9a-zA-Z_-]*)$ api/address.php?park_id=$1 [NC,L]
+    RewriteRule api/activity/([0-9a-zA-Z_-]*)$ api/activity.php?park_id=$1 [NC,L]
+    RewriteRule api/operatinghours/([0-9a-zA-Z_-]*)$ api/operatinghours.php?park_id=$1 [NC,L]
+    RewriteRule api/regions api/regions.php
+    RewriteRule api/states/([0-9a-zA-Z_-]*)$ api/states.php?region_id=$1 [NC,L]
+    RewriteRule api/$ api/parks.php [NC,L]
+    RewriteRule api/parks/([0-9]+)/([0-9]+)$ api/parks.php?region_id=$1&state_id=$2 [NC,L]
+    RewriteRule api/park/detail/([0-9]+)$ api/parkdetail.php?park_id=$1 [NC,L]
+</IfModule>

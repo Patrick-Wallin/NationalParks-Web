@@ -1,0 +1,110 @@
+
+body {
+    opacity: 1.0;
+    background-color: white;
+}
+
+header {
+  border-bottom: 1px solid #c56c39;
+}
+
+.mainbody {
+  border-bottom: 1px solid #c56c39;
+  background-color: #000000; 
+}
+
+.title {
+    color: #ffffff;
+    display: inline;
+    font-size: large;
+    font-family: cursive;
+}
+
+.navbar-custom { 
+    background-color: #000000; 
+} 
+  
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+    color: #ffffff; 
+} 
+
+.custom-toggler { 
+    border-color: #c56c39; 
+} 
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,226,209, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar .navbar-brand img {
+    height: 50px;
+  }
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item .nav-link:active,
+.navbar-custom .nav-item .nav-link:focus,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #c56c39;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.mainbody .nav .nav-item.active .nav-link,
+.mainbody .nav .nav-item .nav-link:active,
+.mainbody .nav .nav-item .nav-link:focus,
+.mainbody .nav .nav-item:hover .nav-link {
+  color: #c56c39;
+}
+
+.mainbody .nav .nav-item .nav-link {
+  color: #ffffff;
+}
+
+#listparks {
+  margin-top:10px;
+}
+
+
+.left-side-about {
+    background-color: #f5e2d1;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  
